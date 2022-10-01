@@ -1,0 +1,14 @@
+{
+    "accounts": [
+        {
+            "id": "1",
+            "name": "Munes",
+            "balance": "3000"
+        },
+        {
+            "id": "2",
+            "name": "Wesam",
+            "balance": "3000"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSON Manupilation</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> </head>
+
+<body>
+	<div class="center">
+		<h1> JSON Manupilation Example With Python And Javascript</h1>
+		<p id='embed'>{{embed}}
+			<br>
+			<br> python app.py
+			<br>
+			<br> And Test On:</p> <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a>
+		<p id='mylog'></p>
+		<input type="text" id="name">
+		<button id="check" onclick="check()">Check</button>
+		<br>
+		<input type="number" id="price">
+		<button id="pay" onclick="pay()" disabled>Pay</button>
+		<br>
+		<div id="response"></div>
+	</div>
+	<script src="{{ url_for('static', filename='js/handler.js') }}"></script>
+</body>
+
+</html>
